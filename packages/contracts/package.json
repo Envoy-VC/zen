@@ -1,0 +1,19 @@
+{
+  "name": "zen-contracts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "vitest run",
+    "coverage": "vitest run --coverage"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@permaweb/ao-loader": "^0.0.26",
+    "@vitest/coverage-v8": "^1.5.0",
+    "prettier": "^3.2.5",
+    "vitest": "^1.5.0"
+  }
+}

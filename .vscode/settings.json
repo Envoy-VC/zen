@@ -1,7 +1,11 @@
 {
-  "eslint.workingDirectories": [
-    {
-      "mode": "auto"
-    }
-  ]
+	"eslint.workingDirectories": [
+		{
+			"mode": "auto"
+		}
+	],
+	"Lua.workspace.library": [
+		"/Users/envoy1084/Library/Application Support/Code/User/globalStorage/sumneko.lua/addonManager/addons/ao/module/library"
+	],
+	"Lua.workspace.checkThirdParty": false
 }
