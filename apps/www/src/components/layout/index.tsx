@@ -9,9 +9,13 @@ const Layout = ({ children }: React.PropsWithChildren) => {
         <Sidebar />
       </div>
       <div className='w-full basis-1/2'>{children}</div>
-      <div className='w-full basis-1/4'></div>
+      <div className='w-full basis-1/4 border-l'></div>
     </div>
   );
 };
 
 export default Layout;
+
+export const withLayout = (Component: React.ReactNode): React.ReactNode => {
+  return <Layout>{Component}</Layout>;
+};

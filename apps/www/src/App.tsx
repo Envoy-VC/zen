@@ -1,18 +1,18 @@
-import { HashRouter } from 'react-router-dom';
-import { Routes, Route } from 'react-router-dom';
-
-import '~/styles/index.css';
+import { RouterProvider, createHashRouter } from 'react-router-dom';
 
 import Home from '~/pages';
+import '~/styles/index.css';
+
+import { withLayout } from './components/layout';
 
 function App() {
-  return (
-    <HashRouter>
-      <Routes>
-        <Route path={'/'} element={<Home />} />
-      </Routes>
-    </HashRouter>
-  );
+  const router = createHashRouter([
+    {
+      path: '/',
+      element: withLayout(<Home />),
+    },
+  ]);
+  return <RouterProvider router={router} />;
 }
 
 export default App;
