@@ -2,6 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'Geist';
+  src: url('../../public/GeistVariableVF.ttf');
+}
+@font-face {
+  font-family: 'Yoruka';
+  src: url('../../public/Yoruka.otf');
+}
+
 @layer base {
   :root {
     --background: hsl(0 0% 100%);

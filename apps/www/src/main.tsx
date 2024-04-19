@@ -4,11 +4,14 @@ import ReactDOM from 'react-dom/client';
 import { ThemeProvider } from '~/providers';
 
 import App from './App.tsx';
+import { Layout } from './components/index.ts';
 
 const Root = (
   <React.StrictMode>
     <ThemeProvider defaultTheme='dark' storageKey='theme'>
-      <App />
+      <Layout>
+        <App />
+      </Layout>
     </ThemeProvider>
   </React.StrictMode>
 );

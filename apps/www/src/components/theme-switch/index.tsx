@@ -5,7 +5,7 @@ import { Variants, motion } from 'framer-motion';
 
 const ThemeSwitcher = () => {
   const { theme, setTheme } = useTheme();
-  const size = 30;
+  const size = 25;
 
   const containerVariants: Variants = {
     dark: {
@@ -31,14 +31,15 @@ const ThemeSwitcher = () => {
   };
 
   return (
-    <div className='flex justify-center'>
+    <div className='flex w-fit justify-center'>
       <div
         onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
         className='cursor-pointer'
       >
         <motion.div
           className={cn(
-            'relative box-content flex overflow-hidden before:absolute before:right-[15%] before:top-[20%] before:z-[2] before:h-[9px] before:w-[9px] before:rounded-[50%] before:bg-white before:transition-transform before:duration-300 before:ease-linear before:content-[""] after:absolute after:right-[30%] after:top-[45%] after:z-[2] after:h-[6px] after:w-[6px] after:rounded-[50%] after:bg-white after:transition-transform after:duration-300 after:ease-linear after:content-[""] before:dark:translate-y-[100px] after:dark:translate-y-[100px]'
+            'relative box-content flex overflow-hidden before:absolute before:right-[15%] before:top-[20%] before:z-[2] before:rounded-[50%] before:bg-white before:transition-transform before:duration-300 before:ease-linear before:content-[""] after:absolute after:right-[30%] after:top-[45%] after:z-[2] after:rounded-[50%] after:bg-white after:transition-transform after:duration-300 after:ease-linear after:content-[""] before:dark:translate-y-[100px] after:dark:translate-y-[100px]',
+            'before:h-[7px] before:w-[7px] after:h-[4px] after:w-[4px] '
           )}
           style={{
             width: `${size * 2.1}px`,
@@ -107,7 +108,7 @@ const ThemeSwitcher = () => {
             className=''
             variants={{
               dark: {
-                boxShadow: 'inset 0px 13px white, inset 0px 13px 1px 1px white',
+                boxShadow: 'inset 0px 10px white, inset 0px 10px 1px 1px white',
                 rotate: 90,
                 background: 'transparent',
               },
