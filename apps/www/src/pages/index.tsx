@@ -1,7 +1,11 @@
-import React from 'react';
+import { ThemeSwitcher } from '~/components';
 
 const Home = () => {
-  return <div>Home</div>;
+  return (
+    <div>
+      <ThemeSwitcher />
+    </div>
+  );
 };
 
 export default Home;
