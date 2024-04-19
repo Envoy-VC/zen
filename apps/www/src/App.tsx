@@ -1,7 +1,7 @@
 import { HashRouter } from 'react-router-dom';
 import { Routes, Route } from 'react-router-dom';
 
-import '~/assets/index.css';
+import '~/styles/index.css';
 
 import Home from '~/pages';
 
