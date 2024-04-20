@@ -16,7 +16,7 @@ const Home = () => {
         </div>
       </div>
       <div className='flex flex-col'>
-        {Array.from({ length: 1000 }).map((_, index) => {
+        {Array.from({ length: 10 }).map((_, index) => {
           return <PostCard key={index} />;
         })}
       </div>
