@@ -1,11 +1,5 @@
-import { ThemeSwitcher } from '~/components';
-
 const Home = () => {
-  return (
-    <div>
-      <ThemeSwitcher />
-    </div>
-  );
+  return <div>Home</div>;
 };
 
 export default Home;

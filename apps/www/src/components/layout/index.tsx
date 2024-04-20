@@ -1,15 +1,18 @@
 import React from 'react';
 
-import { Sidebar } from '~/components';
+import { Header, Navbar, Sidebar } from '~/components';
 
 const Layout = ({ children }: React.PropsWithChildren) => {
   return (
-    <div className='flex h-[400dvh] flex-row font-sans'>
-      <div className='w-full basis-1/4'>
-        <Sidebar />
+    <div className='flex w-full flex-col font-sans'>
+      <Navbar />
+      <Header />
+      <div className='flex w-full flex-row gap-2'>
+        <div className='basis-2/3'>{children}</div>
+        <div className='basis-1/3'>
+          <Sidebar />
+        </div>
       </div>
-      <div className='w-full basis-1/2'>{children}</div>
-      <div className='w-full basis-1/4 border-l'></div>
     </div>
   );
 };

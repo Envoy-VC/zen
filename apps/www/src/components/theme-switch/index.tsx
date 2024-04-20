@@ -5,7 +5,7 @@ import { Variants, motion } from 'framer-motion';
 
 const ThemeSwitcher = () => {
   const { theme, setTheme } = useTheme();
-  const size = 25;
+  const size = 20;
 
   const containerVariants: Variants = {
     dark: {
@@ -108,7 +108,7 @@ const ThemeSwitcher = () => {
             className=''
             variants={{
               dark: {
-                boxShadow: 'inset 0px 10px white, inset 0px 10px 1px 1px white',
+                boxShadow: 'inset 0px 7px white, inset 0px 7px 1px 1px white',
                 rotate: 90,
                 background: 'transparent',
               },
