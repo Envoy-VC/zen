@@ -7,9 +7,9 @@ const Layout = ({ children }: React.PropsWithChildren) => {
     <div className='font-regular flex w-full flex-col'>
       <Navbar />
       <Header />
-      <div className='flex w-full flex-row gap-2'>
-        <div className='basis-2/3'>{children}</div>
-        <div className='basis-1/3'>
+      <div className='mx-auto flex w-full max-w-screen-xl flex-row'>
+        <div className='w-full basis-[100%] px-2 lg:basis-2/3'>{children}</div>
+        <div className='hidden w-full lg:flex lg:basis-1/3'>
           <Sidebar />
         </div>
       </div>

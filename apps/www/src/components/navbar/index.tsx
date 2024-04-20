@@ -10,8 +10,8 @@ import { Button } from '../ui/button';
 const Navbar = () => {
   const { pathname } = useLocation();
   return (
-    <div className='fixed left-0 top-0 z-[2] w-full border-b-2 bg-white dark:bg-black'>
-      <div className='mx-auto flex w-full max-w-screen-xl items-center justify-between gap-2 px-4 py-3'>
+    <div className='fixed left-0 top-0 z-[2] hidden w-full border-b-2 bg-white dark:bg-black sm:flex'>
+      <div className='mx-auto flex w-full max-w-screen-xl items-center justify-between gap-2 px-8 py-3'>
         <div className='flex flex-row items-center gap-4'>
           <Logo size={38} />
 
