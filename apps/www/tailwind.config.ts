@@ -19,7 +19,10 @@ const config = {
     },
     extend: {
       fontFamily: {
-        sans: ['Geist', 'sans-serif'],
+        regular: ['Zen Regular', 'sans-serif'],
+        medium: ['Zen Medium', 'sans-serif'],
+        semibold: ['Zen Semibold', 'sans-serif'],
+        bold: ['Zen Bold', 'sans-serif'],
         yoruka: ['Yoruka', 'sans-serif'],
       },
       colors: {

@@ -4,7 +4,7 @@ import { Header, Navbar, Sidebar } from '~/components';
 
 const Layout = ({ children }: React.PropsWithChildren) => {
   return (
-    <div className='flex w-full flex-col font-sans'>
+    <div className='font-regular flex w-full flex-col'>
       <Navbar />
       <Header />
       <div className='flex w-full flex-row gap-2'>

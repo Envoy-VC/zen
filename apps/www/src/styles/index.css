@@ -3,9 +3,24 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: 'Geist';
-  src: url('../../public/GeistVariableVF.ttf');
+  font-family: 'Zen Regular';
+  src: url('../../public/zen-regular.otf');
 }
+@font-face {
+  font-family: 'Zen Medium';
+  src: url('../../public/zen-medium.otf');
+}
+
+@font-face {
+  font-family: 'Zen Semibold';
+  src: url('../../public/zen-semibold.otf');
+}
+
+@font-face {
+  font-family: 'Zen Bold';
+  src: url('../../public/zen-bold.otf');
+}
+
 @font-face {
   font-family: 'Yoruka';
   src: url('../../public/Yoruka.otf');
