@@ -17,7 +17,7 @@ interface NavItemProps {
   href: string;
 }
 
-const NavItem = ({ Icon, label, href }: NavItemProps) => {
+const NavItem = ({ Icon, href }: NavItemProps) => {
   const location = useLocation();
 
   return (

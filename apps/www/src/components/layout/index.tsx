@@ -1,19 +1,16 @@
 import React from 'react';
 
-import { Header, MobileNavbar, Navbar, Sidebar } from '~/components';
+import { Header, MobileNavbar, Navbar } from '~/components';
 
 const Layout = ({ children }: React.PropsWithChildren) => {
   return (
-    <div className='font-regular flex w-full flex-col'>
+    <div className='flex w-full flex-col font-regular'>
       <Navbar />
-      <Header />
-      <div className='mx-auto flex w-full max-w-screen-xl flex-row mb-[10dvh] sm:mb-0'>
-        <div className='w-full basis-[100%] px-2 lg:basis-2/3'>{children}</div>
-        <div className='hidden w-full lg:flex lg:basis-1/3'>
-          <Sidebar />
-        </div>
+      <div className='flex w-full flex-col sm:mt-16'>
+        <Header />
+        {children}
+        <MobileNavbar />
       </div>
-      <MobileNavbar />
     </div>
   );
 };

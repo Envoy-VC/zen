@@ -1,12 +1,11 @@
 import { RouterProvider, createHashRouter } from 'react-router-dom';
 
-import { userProfileLoader } from '~/lib/helpers/loaders';
+import { postPageLoader, userProfileLoader } from '~/lib/helpers/loaders';
 
-import Home from '~/pages';
+import { AuthPage, Home, PostPage, UserProfile } from '~/pages';
 import '~/styles/index.css';
 
 import { withLayout } from './components/layout';
-import UserProfile from './pages/[...user]';
 
 function App() {
   const router = createHashRouter([
@@ -15,9 +14,18 @@ function App() {
       element: withLayout(<Home />),
     },
     {
+      path: '/auth',
+      element: withLayout(<AuthPage />),
+    },
+    {
       path: '/u/:userId',
       loader: userProfileLoader,
-      element: <UserProfile />,
+      element: withLayout(<UserProfile />),
+    },
+    {
+      path: '/p/:postId',
+      loader: postPageLoader,
+      element: withLayout(<PostPage />),
     },
   ]);
   return <RouterProvider router={router} />;
