@@ -19,7 +19,7 @@ const reactions = [
 
 const PostCard = () => {
   return (
-    <div className='flex flex-row items-start gap-2 border-b p-4 hover:bg-[#F4F4F5]'>
+    <div className='flex flex-row items-start gap-2 border-b p-4 hover:bg-[#F4F4F5] dark:hover:bg-[#18181B]'>
       <Avatar className='h-full max-h-10 w-full max-w-10 rounded-full'>
         <AvatarImage
           src='https://avatars.githubusercontent.com/u/65389981?v=4'

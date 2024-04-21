@@ -25,7 +25,7 @@ const Navbar = () => {
           {NavItems.map((item) => (
             <Button
               variant={pathname === item.href ? 'secondary' : 'ghost'}
-              className='h-9 !text-sm font-medium'
+              className='h-9 font-medium !text-sm'
               key={item.title}
               asChild
             >
@@ -36,7 +36,7 @@ const Navbar = () => {
         <div className='flex flex-row items-center gap-3'>
           <Button
             variant='ghost'
-            className='h-9 rounded-full border border-black text-base font-bold dark:border-white'
+            className='h-9 rounded-full border border-black font-bold text-base dark:border-white'
           >
             Signup
           </Button>

@@ -29,7 +29,10 @@ const config = {
         border: 'var(--border)',
         input: 'var(--input)',
         ring: 'var(--ring)',
-        background: 'var(--background)',
+        background: {
+          DEFAULT: 'var(--background)',
+          secondary: 'var(--background-secondary)',
+        },
         foreground: 'var(--foreground)',
         primary: {
           DEFAULT: 'var(--primary)',
